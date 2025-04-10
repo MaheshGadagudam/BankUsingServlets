@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('pexels-pixabay-163056.jpg'); /* your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dashboard {
+            background-color: rgba(0, 0, 0, 0.6); /* dark overlay for better contrast */
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .dashboard h1 {
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        .dashboard button {
+            display: block;
+            width: 250px;
+            padding: 15px;
+            margin: 10px auto;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .dashboard button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Bank Dashboard</h1>
+        <button onclick="window.location.href='profileServlet'">Self Account Details</button>
+        <button onclick="window.location.href='CheckBalanceServlet'">Check Balance</button>
+        <button onclick="window.location.href='deposit.html'">Deposit Amount</button>
+        <button onclick="window.location.href='transfer.html'">Transfer Amount</button>
+    </div>
+</body>
+</html>
